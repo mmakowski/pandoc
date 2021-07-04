@@ -61,6 +61,7 @@ module Text.Pandoc.Writers
     , writeOrg
     , writePlain
     , writePowerpoint
+    , writeRoam
     , writeRST
     , writeRTF
     , writeRevealJs
@@ -116,6 +117,7 @@ import Text.Pandoc.Writers.OpenDocument
 import Text.Pandoc.Writers.OPML
 import Text.Pandoc.Writers.Org
 import Text.Pandoc.Writers.Powerpoint
+import Text.Pandoc.Writers.Roam
 import Text.Pandoc.Writers.RST
 import Text.Pandoc.Writers.RTF
 import Text.Pandoc.Writers.TEI
@@ -171,6 +173,7 @@ writers = [
   ,("markdown_github" , TextWriter writeMarkdown)
   ,("markdown_mmd" , TextWriter writeMarkdown)
   ,("plain"        , TextWriter writePlain)
+  ,("roam"         , TextWriter writeRoam)
   ,("rst"          , TextWriter writeRST)
   ,("mediawiki"    , TextWriter writeMediaWiki)
   ,("dokuwiki"     , TextWriter writeDokuWiki)
